@@ -1,0 +1,14 @@
+db:
+  host: localhost
+  port: 5432
+  user: postgres
+  password: postgres
+  database: f1news_db
+
+logic:
+  sitemap_url: https://f1report.ru/sitemap.xml
+  source_name: f1report.ru
+  delay: 1.0
+  target_count: 10000
+  recrawl_interval: 2592000  # 30 дней
+  recrawl_batch_size: 10

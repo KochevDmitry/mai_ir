@@ -1,0 +1,16 @@
+db:
+  host: localhost
+  port: 5432
+  user: postgres
+  password: postgres
+  database: f1news_db
+
+logic:
+  base_url: https://www.f1news.ru
+  source_name: f1news.ru
+  delay: 1.0  # секунды между запросами
+  target_count: 30000
+  start_date: "2025/12/22"
+  max_empty_days: 30  # после скольки дней без статей остановиться
+  recrawl_interval: 2592000  # 30 дней в секундах (0 = отключено)
+  recrawl_batch_size: 10  # сколько статей проверять за раз
