@@ -249,14 +249,14 @@ C = 527\,771.
 соответствии распределения частот слов закону Ципфа.
 
 \subsection{Визуализация}
-\begin{figure}[H]  % <-- H вместо htbp
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{zipf_1.png}
 \caption{Закон Ципфа}
 \label{fig:zipf1}
 \end{figure}
 
-\begin{figure}[H]  % <-- H вместо htbp
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{zipf_2.png}
 \caption{500 самых частых терминов}
@@ -444,7 +444,7 @@ C = 544\,976.
 
 Парсер запросов устойчив к произвольному количеству пробелов и допускает нестрогое форматирование запроса пользователем.
 
-Примеры поддерживаемых запросов: \guillemotleft московский авиационный институт\guillemotright, \guillemotleft(красный || желтый) автомобиль\guillemotright, \guillemotleft руки !ноги\guillemotright.
+Примеры поддерживаемых запросов: \guillemotleft чемпионат мира\guillemotright, \guillemotleft(красный || белая) машина\guillemotright, \guillemotleft руки !ноги\guillemotright.
 
 \subsection{Архитектура поисковой системы}
 
@@ -489,6 +489,13 @@ C = 544\,976.
 Поисковая выдача содержит общее количество найденных документов, и также идентификаторы документов и соответствующие им URL.
 
 При превышении лимита выводится ссылка на получение следующей порции результатов.
+
+\subsection{Пример работы программы}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{query.png}
+\caption{Пример выдачи}
+\end{figure}
 
 \subsection{Производительность поиска}
 
